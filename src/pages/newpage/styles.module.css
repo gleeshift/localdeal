@@ -1,0 +1,57 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.docPage {
+  display: flex;
+}
+
+.docSidebarContainer {
+  border-right: 1px solid var(--ifm-toc-border-color);
+  box-sizing: border-box;
+  width: 300px;
+  position: relative;
+  margin-top: calc(-1 * var(--ifm-navbar-height));
+}
+
+.docMainContainer {
+  flex-grow: 1;
+}
+
+@media (max-width: 996px) {
+  .docPage {
+    display: inherit;
+  }
+
+  .docSidebarContainer {
+    margin-top: 0;
+  }
+}
+
+.docItemContainer {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+@media only screen and (min-width: 997px) {
+  .docItemCol {
+    max-width: 75% !important;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1320px) {
+  .docItemWrapper {
+    max-width: calc(
+            var(--ifm-container-width) - 300px - var(--ifm-spacing-horizontal) * 2
+    );
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .docItemContainer {
+    padding: 0 0.3rem;
+  }
+}

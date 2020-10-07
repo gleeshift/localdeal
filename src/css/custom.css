@@ -1,0 +1,129 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+
+
+/**
+ * input
+ *
+ * Custom form component styling. This is mostly neccessary for the dark theme.
+ */
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: var(--ifm-background-color);
+  background-clip: padding-box;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  cursor: pointer;
+  height: 1.5em;
+  margin-bottom: 0.75em;
+  width: 1.5em;
+  outline: none;
+  transition-duration: var(--ifm-transition-fast);
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: var(--ifm-background-color);
+  background-clip: padding-box;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 1em;
+  cursor: pointer;
+  height: 1.5em;
+  margin-bottom: 0.75em;
+  width: 1.5em;
+  outline: none;
+  transition-duration: var(--ifm-transition-fast);
+  vertical-align: middle;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+input.input--text,
+input[type="email"],
+input[type="text"] {
+  --ifm-button-size-multiplier: 1;
+  background-color: var(--ifm-panel-background-color);
+  border: 1px solid var(--ifm-panel-border-color);
+  border-radius: calc( var(--ifm-global-radius) * var(--ifm-button-size-multiplier) );
+  box-shadow: var(--ifm-panel-box-shadow);
+  box-sizing: border-box;
+  color: var(--ifm-heading-color);
+  display: inline-block;
+  font-size: calc(0.8rem * var(--ifm-button-size-multiplier));
+  line-height: 1.5;
+  padding: calc( var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier) ) 0.8em;
+  transition: var(--ifm-transition-slow) ease;
+  vertical-align: middle;
+}
+
+input.input--text:focus,
+input[type="email"]:focus,
+input[type="text"]:focus {
+  background: var(--ifm-panel-background-color-active);
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--ifm-panel-box-shadow-active);
+  color: var(--ifm-color-primary);
+}
+
+input.input--block {
+  display: block !important;
+  max-width: none !important;
+  width: 100%;
+}
+
+input.input--lg {
+  --ifm-button-size-multiplier: 1.35;
+}
+
+input.input--xl {
+  --ifm-button-size-multiplier: 1.7;
+}
+
+input.input--highlight-wrapper {
+  animation: gradientBG 5s ease-in infinite;
+  background-image: var(--ifm-highlight-gradient);
+  background-size: 150% 150%;
+  border: 0px none;
+  font-weight: 600;
+  padding: 1px;
+}

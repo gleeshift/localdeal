@@ -1,0 +1,91 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.showcaseUser {
+  height: 100%;
+}
+
+.productItem {
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  /*border: 1px solid var(--ifm-color-emphasis-300);*/
+  /*border-radius: var(--ifm-global-radius);*/
+  /*display: flex;*/
+  /*padding: 1rem;*/
+}
+.productItem:hover {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  text-decoration: none;
+  border-color: var(--ifm-color-primary);
+}
+
+
+.cc-container {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-width: 40em;
+}
+
+.cc-container:hover {
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+
+.searchinput {
+  border-color: var(--ifm-color-content-secondary);
+  border-radius: var(--ifm-global-radius);
+  border-style: solid;
+  border-width: var(--ifm-global-border-width);
+  font-size: var(--ifm-font-size-base);
+  padding: 0.5rem;
+}
+
+.searchQueryInput,
+.searchVersionInput {
+  border-radius: var(--ifm-global-radius);
+  border: var(--ifm-global-border-width) solid
+  var(--ifm-color-content-secondary);
+  font-size: var(--ifm-font-size-base);
+  padding: 0.75rem;
+  width: 100%;
+  background: #fff;
+}
+
+.searchQueryInput:hover {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  text-decoration: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.searchResultsColumn {
+  font-size: 0.9rem;
+}
+
+.searchSelect {
+  padding: 6px 10px;
+  padding-right: 30px;
+  font-size: 19px;
+  /*font-weight: 4000;*/
+  /*color: #0000*/
+}
+.searchTextBox {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  /*outline: none;*/
+  /*position: relative;*/
+  /*font-family: inherit;*/
+  /*font-size: 14px;*/
+  width: 100%;
+}
